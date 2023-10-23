@@ -1,1 +1,10 @@
-this is test
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Build"
+            }
+        }
+    }
+}
